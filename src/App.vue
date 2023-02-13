@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div>
     <router-link to="/">Home</router-link>
     <router-link to="/about">About</router-link>
     <router-view></router-view>
@@ -7,28 +7,23 @@
 </template>
 
 <script>
-import CardsList from './components/CardsList.vue'
-import About from './components/About.vue'
-import { createRouter, createWebHashHistory } from 'vue-router'
+import { defineComponent } from 'vue'
+import { createRouter, createWebHistory } from 'vue-router'
+import Home from './views/Home.vue'
+import About from './views/About.vue'
 
 const routes = [
-  {
-    path: '/',
-    component: CardsList
-  },
-  {
-    path: '/about',
-    component: About
-  }
+  { path: '/', component: Home },
+  { path: '/about', component: About }
 ]
 
 const router = createRouter({
-  history: createWebHashHistory(),
+  history: createWebHistory(),
   routes
 })
 
-export default {
+export default defineComponent({
   name: 'App',
   router
-}
+})
 </script>
