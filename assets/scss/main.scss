@@ -1,11 +1,14 @@
 $primary-color: #ff0000;
 
 body {
-    background-color: grey;
+    background-image: url(../assets/millenium.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .card {
     border: 1px solid $primary-color;
     padding: 10px;
     margin-bottom: 10px;
+    background-size: cover;
 }
