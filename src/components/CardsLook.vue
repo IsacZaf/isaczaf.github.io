@@ -4,13 +4,13 @@
       <img :src="image" alt="Card Image">
     </div>
     <div class="card-content">
-      <span class="card-title">{{ name }}</span>
+      <span class="card-title card-name">{{ name }}</span>
       <p>{{ type }}</p>
       <p>{{ desc }}</p>
-      <input v-model="inputValue" placeholder="Enter a value">
     </div>
   </div>
 </template>
+
 
 <script>
 export default {
@@ -50,9 +50,21 @@ export default {
 }
 
 .card-content {
+  color: white;
   height: 50%;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+}
+
+.card-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: white !important;
+  margin-bottom: 0.5rem;
+}
+
+.card-name {
+  color: white;
 }
 </style>
