@@ -1,8 +1,8 @@
-import { createApp } from 'vue'
+import { createApp } from "vue";
+import CardsList from "./components/CardsList.vue";
 
-import App from './App.vue';
-
-
-
-
-createApp(App).mount('#app')
+createApp({
+    components: {
+        CardsList,
+    },
+}).mount("#app");
