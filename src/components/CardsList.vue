@@ -1,43 +1,35 @@
 <template>
-  <div class="cards-list">
-    <CardsLook v-for="card in cards" :key="card.id" :name="card.name" :type="card.type" :desc="card.desc"
-      :image="card.card_images[0].image_url" />
+  <div>
+    <h1>Yugioh Cards</h1>
+    <ul v-if="cards.length">
+      <li v-for="card in cards" :key="card.id">
+        <Card :card="card" />
+      </li>
+    </ul>
   </div>
 </template>
 
 <script>
-import CardsLook from "./CardsLook.vue";
+import axios from 'axios'
+import Card from './Card.vue'
 
 export default {
   components: {
-    CardsLook,
+    Card
   },
   data() {
     return {
-      cards: [],
-    };
+      cards: []
+    }
   },
-  async created() {
-    await this.fetchCards();
-  },
-  methods: {
-    async fetchCards() {
-      try {
-        const response = await fetch(
-          "https://db.ygoprodeck.com/api/v7/cardinfo.php?archetype=Red-Eyes"
-        );
-        const data = await response.json();
-        this.cards = data.data;
-      } catch (error) {
-        console.log(error);
-      }
-    },
-  },
-};
-</script>
-<style scoped>
-.cards-list {
-  display: flex;
-  flex-wrap: wrap;
+  created() {
+    axios.get('https://db.ygoprodeck.com/api/v7/cardinfo.php')
+      .then(response => {
+        this.cards = response.data.data
+      })
+      .catch(error => {
+        console.log(error)
+      })
+  }
 }
-</style>
+</script>

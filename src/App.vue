@@ -2,8 +2,6 @@
   <div>
     <CardsList />
   </div>
-
-
 </template>
 
 <script>
