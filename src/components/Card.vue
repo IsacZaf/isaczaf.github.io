@@ -1,9 +1,12 @@
 <template>
-    <div class="card">
-        <img :src="card.card_images[0].image_url" :alt="card.name" />
+    <div class="card" v-on:click="showDetails(card)">
+
+        <img :src="card.card_images[0].image_url" :alt="`Image of ${card.name}`" />
+
         <h2>{{ card.name }}</h2>
         <p>{{ card.desc }}</p>
-        <p>Level/Rank: {{ card.level }}</p>
+        <p v-if="card.level">Level/Rank: {{ card.level }}</p>
+
         <p>Attribute: {{ card.attribute }}</p>
         <p>Type: {{ card.type }}</p>
     </div>

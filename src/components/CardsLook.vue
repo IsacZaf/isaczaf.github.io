@@ -7,6 +7,7 @@
       <span class="card-title">{{ name }}</span>
       <p>{{ type }}</p>
       <p>{{ desc }}</p>
+      <input v-model="inputValue" placeholder="Enter a value">
     </div>
   </div>
 </template>
@@ -19,8 +20,14 @@ export default {
     desc: String,
     image: String,
   },
+  data() {
+    return {
+      inputValue: ''
+    }
+  }
 };
 </script>
+
 
 <style scoped>
 .card {
