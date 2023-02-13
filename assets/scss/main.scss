@@ -1,0 +1,11 @@
+$primary-color: #ff0000;
+
+body {
+    background-color: grey;
+}
+
+.card {
+    border: 1px solid $primary-color;
+    padding: 10px;
+    margin-bottom: 10px;
+}
