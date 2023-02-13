@@ -1,16 +1,19 @@
 <script>
-import CitiesList from './components/CitiesList.vue'
-import HelloWorld from './components/HelloWorld.vue'
+import CardsList from './components/CardsList.vue'
+import CardsLook from './components/CardsLook.vue'
 
 export default {
   components: {
-    CitiesList,
-    HelloWorld
+    CardsList,
+    CardsLook
   }
 }
 </script>
 
 <template>
-  <HelloWorld msg="Hello World!" />
-  <CitiesList />
+  <div>
+    <CardsLook />
+    <CardsList />
+  </div>
 </template>
+
