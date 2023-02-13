@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1>Yugioh Cards</h1>
+    <h1>Cards belonging to the Red-Eyes archetype</h1>
     <ul v-if="cards.length">
       <li v-for="card in cards" :key="card.id">
         <Card :card="card" />
@@ -23,13 +23,14 @@ export default {
     }
   },
   created() {
-    axios.get('https://db.ygoprodeck.com/api/v7/cardinfo.php')
+    axios.get('https://db.ygoprodeck.com/api/v7/cardinfo.php?archetype=Red-Eyes')
       .then(response => {
         this.cards = response.data.data
       })
       .catch(error => {
         console.log(error)
       })
+
   }
 }
 </script>
