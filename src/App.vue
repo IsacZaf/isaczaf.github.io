@@ -3,7 +3,7 @@
     <nav class="navbar navbar-expand-lg">
       <router-link to="/" class="nav-link active btn btn-primary">Home</router-link>
       <router-link to="/about" class="nav-link btn btn-secondary">About</router-link>
-      <router-link to="/cards" class="nav-link btn btn-success">Card</router-link>
+      <router-link to="/cards" class="nav-link btn btn-success">Cards</router-link>
     </nav>
 
     <router-view></router-view>

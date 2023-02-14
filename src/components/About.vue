@@ -1,6 +1,13 @@
 <template>
     <div class="about">
-        <h1>About me</h1>
+        <h1 class="big-text">About me</h1>
+        <div class="plain-text">
+            Just a simple page dedicated to the "Red-Eyes" archetype of cards.
+            This is a plea to Konami to release better support to make the deck viable competitively.
+            THIS PAGE IS NOT ASSOCIATED WITH KONAMI IN ANY WAY
+
+
+        </div>
     </div>
 </template>
 

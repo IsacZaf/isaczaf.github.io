@@ -4,11 +4,18 @@ body {
     background-image: url(../assets/millenium.webp);
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
 }
+
+
 
 .card {
     border: 1px solid $primary-color;
     padding: 10px;
     margin-bottom: 10px;
-    background-size: cover;
+}
+
+.btn-secondary,
+.btn-success {
+    color: white;
 }

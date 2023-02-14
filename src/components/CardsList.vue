@@ -1,8 +1,8 @@
 <template>
   <div>
-    <h1>Cards belonging to the Red-Eyes archetype</h1>
-    <ul v-if="cards.length">
-      <li v-for="card in cards" :key="card.id">
+    <h1 class="big-text">Cards belonging to the Red-Eyes archetype</h1>
+    <ul v-if="cards.length" style="display: flex; flex-wrap: wrap;">
+      <li v-for="card in cards" :key="card.id" style="margin: 10px;">
         <Card :card="card" />
       </li>
     </ul>
@@ -13,7 +13,14 @@
 .card {
   width: 350px;
   float: left;
-  margin: 10px;
+}
+
+.big-text {
+  color: firebrick;
+}
+
+.plain-text {
+  color: firebrick;
 }
 </style>
 

@@ -1,6 +1,10 @@
 <template>
     <div class="home">
-        <h1>Home Page</h1>
+        <h1 class="big-text">Home Page</h1>
+        <div class="plain-text">
+            Home sweet home. Please click on "Cards" to view the good stuff.
+            Also, please release new support :)
+        </div>
     </div>
 </template>
 
