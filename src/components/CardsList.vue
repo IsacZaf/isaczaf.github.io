@@ -18,10 +18,6 @@
 .big-text {
   color: firebrick;
 }
-
-.plain-text {
-  color: firebrick;
-}
 </style>
 
 <script>

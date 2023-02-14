@@ -2,7 +2,7 @@
     <div class="about">
         <h1 class="big-text">About me</h1>
         <div class="plain-text">
-            Just a simple page dedicated to the "Red-Eyes" archetype of cards.
+            Just a simple page dedicated to the "Red-Eyes" archetype of cards. We despise "Blue-Eyes" here!
             This is a plea to Konami to release better support to make the deck viable competitively.
             THIS PAGE IS NOT ASSOCIATED WITH KONAMI IN ANY WAY
 

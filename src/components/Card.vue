@@ -36,8 +36,4 @@ export default {
     padding: 10px;
     margin: 10px;
 }
-
-.card-title {
-    color: red;
-}
 </style>

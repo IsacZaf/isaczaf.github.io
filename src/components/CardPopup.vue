@@ -60,9 +60,9 @@ export default {
     flex-direction: column;
     align-items: center;
     padding: 20px;
-    background-color: #fff;
-    border: 1px solid #ccc;
-    box-shadow: 2px 2px #ccc;
+    background-color: #ffcccc;
+    border: 2px solid rgba(255, 0, 0, 0.5);
+    box-shadow: inset 0px 0px 0px 2px red;
 }
 
 .card-popup-image img {

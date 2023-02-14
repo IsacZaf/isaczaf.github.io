@@ -2,8 +2,10 @@
     <div class="home">
         <h1 class="big-text">Home Page</h1>
         <div class="plain-text">
-            Home sweet home. Please click on "Cards" to view the good stuff.
-            Also, please release new support :)
+            Site dedicated to showcasing Red-Eyes cards from the TCG game "Yu-gi-oh!" Please click on "Cards" to view
+            the
+            good stuff.
+            Also Konami, please release new support for Red-Eyes :)
         </div>
     </div>
 </template>
