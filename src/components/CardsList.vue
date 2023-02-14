@@ -9,6 +9,14 @@
   </div>
 </template>
 
+<style>
+.card {
+  width: 350px;
+  float: left;
+  margin: 10px;
+}
+</style>
+
 <script>
 import axios from 'axios'
 import Card from './Card.vue'
@@ -33,4 +41,6 @@ export default {
 
   }
 }
+
+
 </script>

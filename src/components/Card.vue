@@ -3,7 +3,7 @@
 <template>
     <div class="card">
         <img :src="card.card_images[0].image_url" :alt="`Image of ${card.name}`" />
-        <h2>{{ card.name }}</h2>
+        <h2 class="card-title">{{ card.name }}</h2>
         <button v-on:click="isPopupOpen = true">View Details</button>
         <card-popup :card="card" :is-open="isPopupOpen" :close="() => isPopupOpen = false" />
     </div>
@@ -35,5 +35,9 @@ export default {
     border: 1px solid #ccc;
     padding: 10px;
     margin: 10px;
+}
+
+.card-title {
+    color: red;
 }
 </style>

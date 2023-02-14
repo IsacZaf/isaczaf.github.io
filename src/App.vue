@@ -1,8 +1,11 @@
 <template>
   <div>
-    <router-link to="/">Home</router-link>
-    <router-link to="/about">About</router-link>
-    <router-link to="/cards">Cards</router-link>
+    <nav class="navbar navbar-expand-lg">
+      <router-link to="/" class="nav-link active btn btn-primary">Home</router-link>
+      <router-link to="/about" class="nav-link btn btn-secondary">About</router-link>
+      <router-link to="/cards" class="nav-link btn btn-success">Card</router-link>
+    </nav>
+
     <router-view></router-view>
   </div>
 </template>

@@ -6,7 +6,7 @@
                 <img :src="card.card_images[0].image_url" :alt="`Image of ${card.name}`" />
             </div>
             <div class="card-popup-description">
-                <h2>{{ card.name }}</h2>
+                <h2 class="cname">{{ card.name }}</h2>
                 <p>{{ card.desc }}</p>
                 <p v-if="card.level">Level/Rank: {{ card.level }}</p>
                 <p>Attribute: {{ card.attribute }}</p>
@@ -39,14 +39,12 @@ export default {
 <style scoped>
 .card-popup {
     position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
 }
+
 
 .card-popup-overlay {
     position: absolute;
@@ -86,5 +84,9 @@ export default {
 
 .card-popup-content button {
     margin-top: 10px;
+}
+
+.cname {
+    color: red;
 }
 </style>
