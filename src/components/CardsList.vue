@@ -14,10 +14,6 @@
   width: 350px;
   float: left;
 }
-
-.big-text {
-  color: firebrick;
-}
 </style>
 
 <script>
